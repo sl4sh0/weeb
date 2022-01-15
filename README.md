@@ -10,9 +10,6 @@
   </ol>
 </div>
 
-
-
-<div>
   <h1>How do i run this?</h1>
   <p>First download requirements</p>
     ```
@@ -32,4 +29,3 @@
     ```
     D:\weeb>python start.py -dir D:\test -name waifu
     ```
-</div>
