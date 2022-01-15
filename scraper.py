@@ -56,10 +56,12 @@ class waifu():
 
         sfw = ["waifu", "neko", "shinobu", "megumin", "bully", "cuddle", "cry", "hug", "awoo", "kiss", "lick", "pat", "smug", "bonk", "yeet", "blush",
                "smile", "wave", "highfive", "handhold", "nom", "bite", "glomp", "slap", "kill", "kick", "happy", "wink", "poke", "dance", "cringe"]
+               
+        os.chdir(sys.argv[2])
 
         while True:
             random_sfw = random.choice(sfw)
-            r = requests.get(f"https://api.waifu.pics/sfw/{random_sfw}").text
+            r = requests.get(f"https://api.waifu.pics/sfw/{random_sfw}")
             json_data_sfw = r.json()
 
             url_sfw = json_data_sfw["url"]
@@ -67,7 +69,7 @@ class waifu():
             name = "".join(random.choice(string.ascii_lowercase)
                            for _ in range(15)) + ".png"
             with open(name, "wb") as f:
-                im = requests.get(url_sfw).text
+                im = requests.get(url_sfw)
                 f.write(im.content)
                 print(f"Downloading file: {name}")
 
