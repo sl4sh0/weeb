@@ -17,7 +17,7 @@
 pip install -r  requirements.txt
 ```
 
-<p>Next type ```python start.py -h```  you will get help menu</p>
+<p>Next type `python start.py -h`  you will get help menu</p>
 
 ```
 D:\weeb>python start.py -h
