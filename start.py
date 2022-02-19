@@ -9,8 +9,6 @@ def start():
         "-dir", help="Name of directory or folder where to save images.", required=True)
     parser.add_argument(
         "-name", help="Name of site u want to scrape from. 4chan or waifu", required=True)
-
-    args = parser.parse_args()
     main()
 
 

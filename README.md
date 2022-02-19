@@ -7,6 +7,7 @@
   <ol>
     <li>BeautifulSoup4</li>
     <li>requests</li>
+    <li>lxml</li>
   </ol>
 </div>
 
